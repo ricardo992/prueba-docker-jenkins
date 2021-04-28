@@ -16,6 +16,11 @@ pipeline {
     }
     stage('Ejecuto selenium') {
       steps {
+        sh 'node test.js'
+      }
+    }
+    stage('Ejecuto servidor') {
+      steps {
         sh 'node index.js'
       }
     }
