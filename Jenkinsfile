@@ -14,5 +14,10 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('Ejecuto selenium') {
+      steps {
+        sh 'node index.js'
+      }
+    }
   }
 }
